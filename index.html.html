@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Your Project! | eTwinning</title>
+<style>
+:root{--navy:#17324d;--teal:#1f8a83;--mint:#e7f5f1;--yellow:#f4c95d;--coral:#f27a64;--ink:#334155;--pale:#f4f7fa;--purple:#7161ef}
+*{box-sizing:border-box}
+body{margin:0;background:#eef3f7;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+.page{max-width:1040px;margin:0 auto;background:#fff;overflow:hidden}
+.hero{padding:36px 24px 32px;text-align:center;color:#fff;background:linear-gradient(135deg,#17324d,#1f8a83)}
+.hero .eyebrow{font-size:.82rem;letter-spacing:.15em;text-transform:uppercase;font-weight:bold;opacity:.9}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:10px 0}
+.hero p{font-size:1.1rem;max-width:720px;margin:12px auto 0}
+main{padding:clamp(16px,4vw,36px)}
+h2{color:var(--navy);font-size:1.55rem;margin:0 0 14px}
+.intro{margin-bottom:28px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{border:1px solid #dce5ec;border-radius:16px;padding:20px;background:#fbfcfd}
+.card .emoji{font-size:2.4rem}
+.card h3{margin:8px 0;color:var(--navy)}
+.card p{margin:0}
+.tag{display:inline-block;background:var(--mint);color:#17665f;padding:4px 9px;border-radius:99px;font-size:.78rem;font-weight:bold;margin-top:12px}
+.tools{margin-top:34px}
+.tools-intro{margin-top:-5px}
+.tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}
+.tool{display:flex;gap:14px;align-items:center;padding:16px;border:1px solid #c7e4dc;border-radius:14px;background:#f3fbf8}
+.tool-icon{flex:0 0 54px;width:54px;height:54px;display:grid;place-items:center;border-radius:13px;background:#fff;font-weight:800;font-size:1.05rem;color:var(--navy);border:1px solid #e2e8f0}
+.tool h3{font-size:1.05rem;margin:0 0 4px;color:var(--navy)}
+.tool p{font-size:.92rem;margin:0 0 7px}
+a{color:#087e78;font-weight:bold}
+.tool a{display:inline-block;text-decoration:none;border-bottom:1px solid currentColor}
+.tool a:hover,.tool a:focus{color:#17324d}
+.tip{margin-top:28px;background:#fff7df;border:1px solid #f4c95d;border-radius:14px;padding:20px}
+.tip h2{font-size:1.3rem}
+.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+label.check{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid #eadcae;border-radius:10px;padding:10px;cursor:pointer}
+.check input{margin-top:5px;accent-color:var(--teal);transform:scale(1.15)}
+label.check:has(input:checked) span{text-decoration:line-through;color:#64748b}
+.activity{margin-top:28px;background:#edf2ff;border:1px solid #c9d7eb;border-radius:16px;padding:22px}
+.activity h2{margin-bottom:8px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.step{background:#fff;border-radius:12px;padding:14px}
+.step b{display:block;color:var(--teal);margin-bottom:5px}
+button{border:0;border-radius:10px;background:var(--navy);color:#fff;padding:11px 16px;font-weight:bold;font-size:.95rem;cursor:pointer}
+button:hover,button:focus{background:var(--teal)}
+#progress{font-weight:bold;color:var(--navy);margin-left:10px}
+footer{text-align:center;padding:20px;background:var(--navy);color:#fff;font-size:.9rem}
+.small{font-size:.85rem;opacity:.9}
+@media(max-width:700px){.cards{grid-template-columns:1fr}.tool-grid{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.hero{padding:28px 18px}main{padding:18px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="hero">
+  <div class="eyebrow">eTwinning • Creative Workshop</div>
+  <h1>🎨 Design Your Project!</h1>
+  <p>Learn how to create a logo, poster and slogan to introduce our project to the world.</p>
+</header>
+<main>
+  <section class="intro">
+    <h2>✨ First, Let’s Understand the Basics</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="emoji" aria-hidden="true">🔰</div>
+        <h3>What Is a Logo?</h3>
+        <p>A logo is a visual symbol that represents a project. It helps people recognise and remember it. A good logo is <strong>simple, original and meaningful</strong>. Choose shapes, symbols and colours that match your project.</p>
+        <span class="tag">Think: one memorable symbol</span>
+      </article>
+      <article class="card">
+        <div class="emoji" aria-hidden="true">🖼️</div>
+        <h3>What Is a Poster?</h3>
+        <p>A poster introduces a project, event or idea with a clear title, short text and visuals. It should catch attention quickly. Use readable text, a balanced layout and images that support your message.</p>
+        <span class="tag">Think: one clear message</span>
+      </article>
+      <article class="card">
+        <div class="emoji" aria-hidden="true">💬</div>
+        <h3>What Is a Slogan?</h3>
+        <p>A slogan is a short, catchy phrase that expresses the main message of a project. It should be easy to say, easy to remember and connected to the project’s purpose.</p>
+        <span class="tag">Think: a few powerful words</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="tools">
+    <h2>🧰 Explore Web 2.0 Design Tools</h2>
+    <p class="tools-intro">Choose a tool to open its website. Check whether an account is needed and follow your teacher’s guidance.</p>
+    <div class="tool-grid">
+      <article class="tool">
+        <div class="tool-icon" style="color:#6554e8">Canva</div>
+        <div><h3>Canva</h3><p>Create logos, posters and presentations with ready-made templates.</p><a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Open Canva ↗</a></div>
+      </article>
+      <article class="tool">
+        <div class="tool-icon" style="color:#d83b3b">Adobe</div>
+        <div><h3>Adobe Express</h3><p>Design posters and eye-catching project graphics.</p><a href="https://www.adobe.com/express/create/poster" target="_blank" rel="noopener noreferrer">Open Adobe Express ↗</a></div>
+      </article>
+      <article class="tool">
+        <div class="tool-icon" style="color:#4285f4">G</div>
+        <div><h3>Google Drawings</h3><p>Combine shapes, text and images to create simple designs.</p><a href="https://drawings.google.com/" target="_blank" rel="noopener noreferrer">Open Google Drawings ↗</a></div>
+      </article>
+      <article class="tool">
+        <div class="tool-icon" style="color:#4b6cb7">MD</div>
+        <div><h3>Microsoft Designer</h3><p>Explore visual ideas and create designs with AI-assisted features.</p><a href="https://designer.microsoft.com/" target="_blank" rel="noopener noreferrer">Open Designer ↗</a></div>
+      </article>
+      <article class="tool">
+        <div class="tool-icon" style="color:#c58a00">Word</div>
+        <div><h3>WordArt</h3><p>Turn slogan words into creative word art.</p><a href="https://wordart.com/" target="_blank" rel="noopener noreferrer">Open WordArt ↗</a></div>
+      </article>
+      <article class="tool">
+        <div class="tool-icon" style="color:#d9578b">Padlet</div>
+        <div><h3>Padlet</h3><p>Share drafts and collect classmates’ ideas on a collaborative board.</p><a href="https://padlet.com/" target="_blank" rel="noopener noreferrer">Open Padlet ↗</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="tip">
+    <h2>✅ Before You Start: Design Checklist</h2>
+    <p>Tick each item as you check your idea. Your progress updates automatically on this page.</p>
+    <div class="checklist" id="checklist">
+      <label class="check"><input type="checkbox"><span>What is our project about, and who is the audience?</span></label>
+      <label class="check"><input type="checkbox"><span>What message do I want to share?</span></label>
+      <label class="check"><input type="checkbox"><span>Do my colours and images fit the topic?</span></label>
+      <label class="check"><input type="checkbox"><span>Is my text clear and easy to read?</span></label>
+      <label class="check"><input type="checkbox"><span>Am I using images responsibly?</span></label>
+      <label class="check"><input type="checkbox"><span>Is my design original?</span></label>
+    </div>
+    <p><span id="progress">0 of 6 completed</span></p>
+    <button type="button" id="reset">Reset checklist</button>
+  </section>
+
+  <section class="activity">
+    <h2>🚀 Now It’s Your Turn!</h2>
+    <p>Make a design that helps other people understand and remember our eTwinning project.</p>
+    <div class="steps">
+      <div class="step"><b>STEP 1 · PLAN</b>Write down the project’s key idea and sketch a few options on paper.</div>
+      <div class="step"><b>STEP 2 · CREATE</b>Choose a Web 2.0 tool and create your logo, poster or slogan.</div>
+      <div class="step"><b>STEP 3 · SHARE</b>Show your design to classmates and explain why you chose it.</div>
+    </div>
+    <p><strong>Creative challenge:</strong> Can you explain your design in one sentence?</p>
+    <p class="small">Remember: some tools may require an account or offer paid features. Never share personal information publicly. Ask your teacher before uploading images of people.</p>
+  </section>
+</main>
+<footer>
+  <strong>Imagine • Create • Share</strong><br>
+  <span class="small">Every great project starts with an idea!</span>
+</footer>
+</div>
+<script>
+const checks = Array.from(document.querySelectorAll('#checklist input[type="checkbox"]'));
+const progress = document.getElementById('progress');
+function updateProgress(){
+  const done = checks.filter(c => c.checked).length;
+  progress.textContent = `${done} of ${checks.length} completed`;
+}
+checks.forEach(c => c.addEventListener('change', updateProgress));
+document.getElementById('reset').addEventListener('click', () => {
+  checks.forEach(c => c.checked = false);
+  updateProgress();
+});
+updateProgress();
+</script>
+</body>
+</html>
